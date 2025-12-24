@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telefone",
-    content: "(35) 99999-9999",
+    content: "(35) 9.9746-8894",
     detail: "WhatsApp disponível",
   },
   {
@@ -55,7 +55,6 @@ const ContactSection = () => {
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
@@ -77,8 +76,7 @@ const ContactSection = () => {
       return;
     }
 
-    // Send via WhatsApp
-    const phone = "5535999999999"; // Substituir pelo número real
+    const phone = "5535997468894";
     const message = encodeURIComponent(
       `*Nova Solicitação de Orçamento*\n\n` +
       `*Nome:* ${formData.name}\n` +
@@ -98,7 +96,7 @@ const ContactSection = () => {
   };
 
   const handleWhatsApp = () => {
-    const phone = "5535999999999"; // Substituir pelo número real
+    const phone = "5535997468894";
     const message = encodeURIComponent(
       "Olá! Gostaria de solicitar um orçamento para serviços de vidraçaria."
     );
@@ -106,7 +104,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contato" className="py-24 bg-secondary/30">
+    <section id="contato" className="py-24 bg-secondary/50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
@@ -131,7 +129,7 @@ const ContactSection = () => {
                 key={info.title}
                 className="flex items-start gap-4 p-5 bg-card rounded-xl border border-border/50"
               >
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <info.icon className="w-6 h-6 text-primary" />
                 </div>
                 <div>

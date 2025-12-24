@@ -52,6 +52,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        brand: {
+          green: "hsl(var(--brand-green))",
+          dark: "hsl(var(--brand-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -98,8 +102,8 @@ export default {
         "slide-in-right": "slide-in-right 0.6s ease-out forwards",
       },
       boxShadow: {
-        glass: "0 8px 32px hsl(200 80% 45% / 0.15)",
-        elevated: "0 20px 60px hsl(210 50% 10% / 0.12)",
+        glass: "0 8px 32px hsl(130 60% 55% / 0.15)",
+        elevated: "0 20px 60px hsl(150 15% 18% / 0.12)",
       },
     },
   },
