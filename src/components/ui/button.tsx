@@ -15,9 +15,9 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-to-r from-primary to-accent text-primary-foreground shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:scale-105 border-0",
-        heroOutline: "border-2 border-card/50 bg-card/10 text-card backdrop-blur-sm hover:bg-card/20 hover:border-card/70",
-        whatsapp: "bg-[hsl(142,70%,45%)] text-primary-foreground hover:bg-[hsl(142,70%,40%)] shadow-lg hover:shadow-xl hover:-translate-y-0.5",
+        hero: "bg-primary text-primary-foreground shadow-xl hover:shadow-2xl hover:-translate-y-1 hover:scale-105 border-0",
+        heroOutline: "border-2 border-primary-foreground/50 bg-primary-foreground/10 text-primary-foreground backdrop-blur-sm hover:bg-primary-foreground/20 hover:border-primary-foreground/70",
+        whatsapp: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl hover:-translate-y-0.5",
       },
       size: {
         default: "h-10 px-5 py-2",

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import logo from "@/assets/logo-opcao.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,17 +16,15 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass-effect">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">O</span>
-            </div>
-            <div>
-              <h1 className="font-serif text-xl font-bold text-foreground">Opção</h1>
-              <p className="text-xs text-muted-foreground -mt-1">Vidraçaria</p>
-            </div>
+          <div className="flex items-center gap-3">
+            <img 
+              src={logo} 
+              alt="Opção Vidraçaria" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}
